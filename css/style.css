@@ -286,10 +286,12 @@ li.lang-switch-item { display: none; }
   color: #fff;
   overflow: hidden;
 }
-/* Sur mobile, la photo de fond est retirée (juste le dégradé) : plus léger
-   et plus lisible sur petit écran. */
+/* Sur mobile, la photo de fond et les formes décoratives sont retirées
+   (juste le dégradé) : plus léger et plus lisible sur petit écran. */
 @media (max-width: 700px) {
   .hero { background-image: linear-gradient(150deg, var(--color-forest-deep) 0%, var(--color-forest) 60%, var(--color-forest-soft) 130%); }
+  .hero-decor { display: none; }
+  .section--forest.section--photo { background-image: linear-gradient(155deg, rgba(4,55,28,0.93), rgba(7,102,51,0.9)); }
 }
 .hero-wave { position: absolute; left: 0; right: 0; bottom: -1px; line-height: 0; z-index: 2; }
 .hero-wave svg { width: 100%; height: 60px; display: block; }

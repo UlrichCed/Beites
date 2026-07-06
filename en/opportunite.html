@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | BEITES-I</title>
+<meta name="description" content="Join the network of experts and independent consultants of BEITES-I in Burkina Faso and internationally.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-links">
+        <span class="topbar-item"><svg class="icon"><use href="../icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></span>
+        <span class="topbar-item"><svg class="icon"><use href="../icons.svg#icon-mail"></use></svg> contact@beites-i.com</span>
+        <span class="topbar-item"><svg class="icon"><use href="../icons.svg#icon-pin"></use></svg> Ouagadougou (BF) &amp; Conakry (Guinea)</span>
+      </div>
+    </div>
+  </div>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="../images/logo/logo.png" alt="BEITES-I" data-fallback><span class="brand-mark-fallback">B-I</span></span>
+      <span class="brand-text"><strong>BEITES-I</strong><span>Territory · Environment · Health</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="qui-sommes-nous.html">About <svg class="icon"><use href="../icons.svg#icon-chevron-down"></use></svg></a>
+          <ul class="dropdown">
+            <li><a href="qui-sommes-nous.html"><svg class="icon"><use href="../icons.svg#icon-compass"></use></svg> Our story &amp; mission</a></li>
+            <li><a href="qui-sommes-nous.html#equipe"><svg class="icon"><use href="../icons.svg#icon-users"></use></svg> Our team</a></li>
+            <li><a href="opportunite.html"><svg class="icon"><use href="../icons.svg#icon-briefcase"></use></svg> Careers</a></li>
+          </ul>
+        </li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="formation.html">Training</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="lang-switch-item"><a href="../opportunite.html">FR</a><a href="opportunite.html" class="is-active">EN</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang-switch">
+        <a href="../opportunite.html">FR</a>
+        <a href="opportunite.html" class="is-active">EN</a>
+      </div>
+      <a href="https://formation.beites-i.com" target="_blank" rel="noopener" class="nav-elearn">E-learning ↗</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Contact us</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <svg class="icon icon-menu"><use href="../icons.svg#icon-menu"></use></svg>
+      <svg class="icon icon-close"><use href="../icons.svg#icon-close"></use></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-header page-header--photo" style="--page-photo:url('../images/design/opportunite-bg.jpg')">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Careers</div>
+    <h1>Join our network of experts</h1>
+    <p>Are you an expert or independent consultant looking to join us? We regularly recruit experts to take part in implementing our projects, in Burkina Faso and internationally.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:56px; align-items:flex-start;">
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2>Send us your CV</h2>
+        <p>This space allows you to send us your CV. Our teams can then contact you directly if a vacant position matches your profile.</p>
+        <ul class="check-list">
+          <li><span class="icon-tick"><svg class="icon"><use href="../icons.svg#icon-check"></use></svg></span>Fill in the form with your details</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="../icons.svg#icon-check"></use></svg></span>Attach your CV (PDF or Word)</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="../icons.svg#icon-check"></use></svg></span>Specify your working language(s)</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="../icons.svg#icon-check"></use></svg></span>Our team reviews your profile and gets back to you</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <div class="form-success" id="formSuccessOpp"><svg class="icon"><use href="../icons.svg#icon-check-circle"></use></svg> Thank you! Your application has been sent.</div>
+        <div class="form-error" id="formErrorOpp">An error occurred while sending. Please try again, or write to us directly at contact@beites-i.com.</div>
+        <form id="oppForm" novalidate>
+          <input type="hidden" name="_subject" value="New application — BEITES-I website">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-grid">
+            <div class="field"><label for="opp-nom">Last name *</label><input type="text" id="opp-nom" name="Name" required></div>
+            <div class="field"><label for="opp-prenom">First name *</label><input type="text" id="opp-prenom" name="FirstName" required></div>
+            <div class="field"><label for="opp-email">E-mail *</label><input type="email" id="opp-email" name="Email" required></div>
+            <div class="field"><label for="opp-tel">Phone *</label><input type="tel" id="opp-tel" name="Phone" required></div>
+            <div class="field full">
+              <label>Working language(s) *</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="Languages" value="French"> French</label>
+                <label><input type="checkbox" name="Languages" value="English"> English</label>
+                <label><input type="checkbox" name="Languages" value="Spanish"> Spanish</label>
+                <label><input type="checkbox" name="Languages" value="Portuguese"> Portuguese</label>
+                <label><input type="checkbox" name="Languages" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="field full"><label for="opp-cv">CV (PDF or Word) *</label><input type="file" id="opp-cv" name="CV" accept=".pdf,.doc,.docx" required></div>
+            <div class="field full"><label for="opp-message">Message *</label><textarea id="opp-message" name="Message" required></textarea></div>
+            <div class="field full">
+              <label class="consent"><input type="checkbox" required> By submitting this form, I agree that the information provided may be used to contact me.</label>
+            </div>
+          </div>
+          <div style="margin-top:22px;">
+            <button type="submit" class="btn btn-primary">Submit my application</button>
+          </div>
+          <p class="form-note"><svg class="icon"><use href="../icons.svg#icon-mail"></use></svg> Applications are sent directly by e-mail to BEITES-I.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark"><img src="../images/logo/logo.png" alt="BEITES-I" data-fallback><span class="brand-mark-fallback">B-I</span></span>
+          <span class="brand-text"><strong style="color:#fff;">BEITES-I</strong><span style="color:rgba(255,255,255,0.6);">Territory · Environment · Health</span></span>
+        </a>
+        <p>An expertise and engineering firm in territory, environment and health, serving sustainable development since 2019.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="qui-sommes-nous.html">About</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="formation.html">Training</a></li>
+          <li><a href="opportunite.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://formation.beites-i.com" target="_blank" rel="noopener">E-learning platform ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><svg class="icon"><use href="../icons.svg#icon-pin"></use></svg> Gounghin, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="../icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></li>
+          <li><svg class="icon"><use href="../icons.svg#icon-mail"></use></svg> <a href="mailto:contact@beites-i.com">contact@beites-i.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BEITES-I SARL. All rights reserved.</span>
+      <span>Ouagadougou, Burkina Faso</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

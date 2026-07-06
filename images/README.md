@@ -1,7 +1,14 @@
 # Images à fournir
 
 Déposez les fichiers exactement sous ces noms pour qu'ils remplacent
-automatiquement les initiales / noms de repli sur le site.
+automatiquement les repères actuels (initiales, icônes, dégradés).
+
+## Logo du cabinet (`images/logo/`)
+- logo.png (logo principal, fond transparent, utilisé dans l'en-tête et le pied de page)
+- favicon.png (carré, min. 512×512px, pour l'onglet du navigateur — sinon le favicon généré actuel reste utilisé)
+
+## Photos de design / illustration (`images/design/`)
+- hero-bg.jpg (photo de terrain en arrière-plan du bandeau d'accueil, ex. mission ou paysage — 1920×1080px conseillé)
 
 ## Équipe (`images/team/`)
 - marcel-wangraoua.jpg

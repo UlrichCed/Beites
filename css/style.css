@@ -148,11 +148,15 @@ li { margin-bottom: 0.4em; color: var(--color-ink-soft); }
 
 .brand { display: flex; align-items: center; gap: 12px; font-family: var(--font-display); }
 .brand-mark {
+  position: relative;
   width: 46px; height: 46px; border-radius: 12px;
   background: linear-gradient(135deg, var(--color-forest), var(--color-ochre));
   color: #fff; display: flex; align-items: center; justify-content: center;
   font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; flex-shrink: 0;
+  overflow: hidden;
 }
+.brand-mark img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; z-index: 1; background: #fff; }
+.brand-mark-fallback { position: relative; z-index: 0; }
 .brand-text strong { display: block; font-size: 1.1rem; font-weight: 600; color: var(--color-forest-deep); font-family: var(--font-display); }
 .brand-text span { display: block; font-size: 0.66rem; color: var(--color-ink-soft); font-family: var(--font-body); letter-spacing: 0.02em; }
 
@@ -236,7 +240,14 @@ li { margin-bottom: 0.4em; color: var(--color-ink-soft); }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background: linear-gradient(150deg, var(--color-forest-deep) 0%, var(--color-forest) 60%, var(--color-forest-soft) 130%);
+  /* Le dégradé (1er calque) reste toujours visible ; la photo (2e calque,
+     images/design/hero-bg.jpg) s'affiche dès qu'elle existe, tintée par le
+     dégradé translucide pour garder le texte lisible. Sans photo, seul le
+     fond uni ci-dessous est visible : rien ne casse en son absence. */
+  background-image: linear-gradient(150deg, rgba(6,35,26,0.88) 0%, rgba(30,74,58,0.84) 60%, rgba(47,102,80,0.75) 130%), url("images/design/hero-bg.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-color: var(--color-forest);
   color: #fff;
   overflow: hidden;
 }

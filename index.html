@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,12 +78,15 @@
     </div>
     <div class="hero-card">
       <div class="hero-stat-grid">
-        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-star"></use></svg></div><div><b>2019</b><span>Année de création</span></div></div>
-        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-target"></use></svg></div><div><b>5</b><span>Domaines de compétences</span></div></div>
-        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-clock"></use></svg></div><div><b>10+</b><span>Ans d'expérience par expert</span></div></div>
-        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-users"></use></svg></div><div><b>9</b><span>Experts &amp; consultants</span></div></div>
+        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-star"></use></svg></div><div><b data-count-to="2019">0</b><span>Année de création</span></div></div>
+        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-target"></use></svg></div><div><b data-count-to="5">0</b><span>Domaines de compétences</span></div></div>
+        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-clock"></use></svg></div><div><b data-count-to="10" data-count-suffix="+">0</b><span>Ans d'expérience par expert</span></div></div>
+        <div class="hero-stat"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-users"></use></svg></div><div><b data-count-to="9">0</b><span>Experts &amp; consultants</span></div></div>
       </div>
     </div>
+  </div>
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30c240 30 480 30 720 15s480-30 720 0v15H0Z" fill="#faf8f4"/></svg>
   </div>
 </section>
 
@@ -91,7 +94,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">BEITES-I : trois piliers, une seule mission</span>
-      <h2>Territoire, Environnement, Santé</h2>
+      <h2 class="gradient-text">Territoire, Environnement, Santé</h2>
     </div>
     <div class="pillars">
       <div class="pillar pillar--territoire">
@@ -183,7 +186,7 @@
   </div>
 </section>
 
-<section class="section--forest section">
+<section class="section--forest section--photo section" style="--section-photo:url('../images/design/valeurs-bg.jpg')">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow" style="background:rgba(255,255,255,0.1); color:#f3ddb8;">Nos valeurs</span>
@@ -207,19 +210,19 @@
       <h2>Nos partenaires et clients</h2>
     </div>
     <div class="grid grid-4">
-      <div class="partner-logo"><img src="images/partners/ministere-sante.png" alt="Ministère de la Santé" data-fallback><span class="partner-fallback">Ministère de la Santé</span></div>
-      <div class="partner-logo"><img src="images/partners/terre-des-hommes.png" alt="Terre des Hommes" data-fallback><span class="partner-fallback">Terre des Hommes</span></div>
-      <div class="partner-logo"><img src="images/partners/albarka-consulting.png" alt="Albarka Consulting" data-fallback><span class="partner-fallback">Albarka Consulting</span></div>
-      <div class="partner-logo"><img src="images/partners/LEGES.png" alt="LEGES" data-fallback><span class="partner-fallback">LEGES</span></div>
-      <div class="partner-logo"><img src="images/partners/processus.jpg" alt="Processus Conseils International" data-fallback><span class="partner-fallback">Processus Conseils International</span></div>
-      <div class="partner-logo"><img src="images/partners/la-source.jpeg" alt="Université La Source" data-fallback><span class="partner-fallback">Université La Source</span></div>
-      <div class="partner-logo"><img src="images/partners/ISGPC.jpeg" alt="ISGPC" data-fallback><span class="partner-fallback">ISGPC</span></div>
-      <div class="partner-logo"><img src="images/partners/CHROMATICS.jpeg" alt="Chromatic's Print" data-fallback><span class="partner-fallback">Chromatic's Print</span></div>
-      <div class="partner-logo"><img src="images/partners/ecole-panafricaine.jpg" alt="École Panafricaine de Santé Publique" data-fallback><span class="partner-fallback">École Panafricaine de Santé Publique</span></div>
-      <div class="partner-logo"><img src="images/partners/udecom.jpg" alt="Udecon" data-fallback><span class="partner-fallback">Udecon</span></div>
-      <div class="partner-logo"><img src="images/partners/begotech.png" alt="Begotech Burkina" data-fallback><span class="partner-fallback">Begotech Burkina</span></div>
-      <div class="partner-logo"><img src="images/partners/igr.png" alt="IGR" data-fallback><span class="partner-fallback">IGR</span></div>
-      <div class="partner-logo"><img src="images/partners/Burcaso.jpg" alt="Burcaso" data-fallback><span class="partner-fallback">Burcaso</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/ministere-sante.png" alt="Ministère de la Santé" data-fallback="collapse"></div><span class="partner-name">Ministère de la Santé</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/terre-des-hommes.png" alt="Terre des Hommes" data-fallback="collapse"></div><span class="partner-name">Terre des Hommes</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/albarka-consulting.png" alt="Albarka Consulting" data-fallback="collapse"></div><span class="partner-name">Albarka Consulting</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/LEGES.png" alt="LEGES" data-fallback="collapse"></div><span class="partner-name">LEGES</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/processus.jpg" alt="Processus Conseils International" data-fallback="collapse"></div><span class="partner-name">Processus Conseils International</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/la-source.jpeg" alt="Université La Source" data-fallback="collapse"></div><span class="partner-name">Université La Source</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/ISGPC.jpeg" alt="ISGPC" data-fallback="collapse"></div><span class="partner-name">ISGPC</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/CHROMATICS.jpeg" alt="Chromatic's Print" data-fallback="collapse"></div><span class="partner-name">Chromatic's Print</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/ecole-panafricaine.jpg" alt="École Panafricaine de Santé Publique" data-fallback="collapse"></div><span class="partner-name">École Panafricaine de Santé Publique</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/udecom.jpg" alt="Udecon" data-fallback="collapse"></div><span class="partner-name">Udecon</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/begotech.png" alt="Begotech Burkina" data-fallback="collapse"></div><span class="partner-name">Begotech Burkina</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/igr.png" alt="IGR" data-fallback="collapse"></div><span class="partner-name">IGR</span></div>
+      <div class="partner-logo"><div class="partner-logo-img"><img src="images/partners/Burcaso.jpg" alt="Burcaso" data-fallback="collapse"></div><span class="partner-name">Burcaso</span></div>
     </div>
   </div>
 </section>

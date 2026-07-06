@@ -37,6 +37,10 @@ document.querySelectorAll('.has-dropdown > a').forEach((toggle) => {
 // début de <body>) : on vérifie donc aussi l'état déjà résolu de l'image.
 document.querySelectorAll('img[data-fallback]').forEach((img) => {
   const hide = () => {
+    if (img.dataset.fallback === 'collapse') {
+      img.parentElement.style.display = 'none';
+      return;
+    }
     img.style.display = 'none';
     const fallback = img.nextElementSibling;
     if (fallback) fallback.classList.add('is-visible');
@@ -96,3 +100,83 @@ function wireForm(formId, successId, errorId) {
 }
 wireForm('contactForm', 'formSuccessContact', 'formErrorContact');
 wireForm('oppForm', 'formSuccessOpp', 'formErrorOpp');
+
+// Léger effet de parallax sur les motifs décoratifs du hero
+const heroDecor = document.querySelector('.hero-decor');
+if (heroDecor && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  window.addEventListener('scroll', () => {
+    heroDecor.style.transform = `translateY(${window.scrollY * 0.15}px)`;
+  }, { passive: true });
+}
+
+// Ombre sous l'en-tête au scroll
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+  const toggleHeaderShadow = () => siteHeader.classList.toggle('is-scrolled', window.scrollY > 8);
+  toggleHeaderShadow();
+  window.addEventListener('scroll', toggleHeaderShadow, { passive: true });
+}
+
+// Animation d'apparition au scroll. Sans JS, ces éléments restent visibles
+// normalement (la classe "reveal" qui les rend transparents n'est ajoutée
+// qu'ici) : rien ne peut donc rester invisible si ce script échoue.
+// Un filet de sécurité force aussi tout à s'afficher après 2,5 s au cas où.
+const revealTargets = document.querySelectorAll(
+  '.card, .pillar, .cta-banner, .office-card, .accordion-item, .form-card'
+);
+if (revealTargets.length) {
+  revealTargets.forEach((el) => el.classList.add('reveal'));
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealTargets.forEach((el) => observer.observe(el));
+  } else {
+    revealTargets.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  setTimeout(() => {
+    revealTargets.forEach((el) => el.classList.add('is-visible'));
+  }, 2500);
+}
+
+// Compteurs animés (statistiques du hero)
+document.querySelectorAll('[data-count-to]').forEach((el) => {
+  const target = parseFloat(el.dataset.countTo);
+  const suffix = el.dataset.countSuffix || '';
+  const duration = 1400;
+  let started = false;
+
+  const run = () => {
+    if (started) return;
+    started = true;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { if (entry.isIntersecting) { run(); obs.unobserve(entry.target); } });
+    }, { threshold: 0.4 });
+    obs.observe(el);
+  } else {
+    run();
+  }
+  // Filet de sécurité : si jamais l'observateur ne se déclenche pas.
+  setTimeout(run, 2500);
+});

@@ -79,5 +79,9 @@
 
 <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2M3 13h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 
+<symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M4 20C4 10 11 4 20 4c0 9-6 16-16 16Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M5 19C10 14 13 11 17 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+
+<symbol id="icon-contour" viewBox="0 0 24 24"><path d="M2 17c2-1 3-3 5-3s2.5 2 4.5 2 2.5-3 5-3 3 2 5.5 1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M3 12c2.5-1.2 4-3 6-3s3 2 5 2 3.5-2.6 6-1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5 7c2-1 3-2.2 5-2.2s2.8 1.6 4.5 1.6c1.5 0 2.7-1 4-1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+
 </defs>
 </svg>

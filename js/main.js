@@ -100,6 +100,7 @@ function wireForm(formId, successId, errorId) {
 }
 wireForm('contactForm', 'formSuccessContact', 'formErrorContact');
 wireForm('oppForm', 'formSuccessOpp', 'formErrorOpp');
+wireForm('newsletterForm', 'newsletterSuccess', 'newsletterError');
 
 // Léger effet de parallax sur les motifs décoratifs du hero
 const heroDecor = document.querySelector('.hero-decor');

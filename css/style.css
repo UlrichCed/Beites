@@ -237,7 +237,7 @@ li.lang-switch-item { display: none; }
 
 .nav-toggle {
   display: none; background: none; border: none; cursor: pointer;
-  width: 42px; height: 42px; border-radius: 10px;
+  width: 44px; height: 44px; border-radius: 10px;
   align-items: center; justify-content: center; color: var(--color-forest-deep);
   flex-shrink: 0;
 }
@@ -473,7 +473,7 @@ li.lang-switch-item { display: none; }
 .field input[type="file"], .field textarea, .field select {
   width: 100%; padding: 12px 14px; border-radius: var(--radius-sm);
   border: 1.5px solid var(--color-border); background: var(--color-sand);
-  color: var(--color-ink); font-family: var(--font-body); font-size: 0.95rem;
+  color: var(--color-ink); font-family: var(--font-body); font-size: 1rem;
 }
 .field textarea { resize: vertical; min-height: 120px; }
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--color-blue); }

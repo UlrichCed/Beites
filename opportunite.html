@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrières | BEITES-I</title>
+<meta name="description" content="Rejoignez le réseau d'experts et consultants indépendants de BEITES-I au Burkina Faso et à l'international.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-links">
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> contact@beites-i.com</span>
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou, Burkina Faso</span>
+      </div>
+    </div>
+  </div>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">B-I</span>
+      <span class="brand-text"><strong>BEITES-I</strong><span>Territoire · Environnement · Santé</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="qui-sommes-nous.html">À propos <svg class="icon"><use href="icons.svg#icon-chevron-down"></use></svg></a>
+          <ul class="dropdown">
+            <li><a href="qui-sommes-nous.html"><svg class="icon"><use href="icons.svg#icon-compass"></use></svg> Notre histoire &amp; mission</a></li>
+            <li><a href="qui-sommes-nous.html#equipe"><svg class="icon"><use href="icons.svg#icon-users"></use></svg> Notre équipe</a></li>
+            <li><a href="opportunite.html"><svg class="icon"><use href="icons.svg#icon-briefcase"></use></svg> Carrières</a></li>
+          </ul>
+        </li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://formation.beites-i.com" target="_blank" rel="noopener" class="nav-elearn">E-learning ↗</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Nous contacter</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+      <svg class="icon icon-menu"><use href="icons.svg#icon-menu"></use></svg>
+      <svg class="icon icon-close"><use href="icons.svg#icon-close"></use></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Carrières</div>
+    <h1>Rejoignez notre réseau d'experts</h1>
+    <p>Vous êtes expert, consultant indépendant, désireux de nous rejoindre ? Nous recrutons régulièrement des experts pour participer à la mise en œuvre de nos projets, au Burkina Faso et à l'international.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:56px; align-items:flex-start;">
+      <div>
+        <span class="eyebrow">Comment ça marche</span>
+        <h2>Communiquez-nous votre CV</h2>
+        <p>Cet espace vous permet de nous communiquer votre CV. Nos équipes pourront ainsi vous contacter directement si des postes à pourvoir correspondent à votre profil.</p>
+        <ul class="check-list">
+          <li><span class="icon-tick"><svg class="icon"><use href="icons.svg#icon-check"></use></svg></span>Remplissez le formulaire avec vos coordonnées</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="icons.svg#icon-check"></use></svg></span>Joignez votre CV (PDF ou Word)</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="icons.svg#icon-check"></use></svg></span>Précisez votre ou vos langues de travail</li>
+          <li><span class="icon-tick"><svg class="icon"><use href="icons.svg#icon-check"></use></svg></span>Notre équipe étudie votre profil et vous recontacte</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <div class="form-success" id="formSuccessOpp"><svg class="icon"><use href="icons.svg#icon-check-circle"></use></svg> Merci ! Votre candidature a bien été envoyée.</div>
+        <div class="form-error" id="formErrorOpp">Une erreur s'est produite lors de l'envoi. Merci de réessayer, ou écrivez-nous directement à contact@beites-i.com.</div>
+        <form id="oppForm" novalidate>
+          <input type="hidden" name="_subject" value="Nouvelle candidature — site BEITES-I">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-grid">
+            <div class="field"><label for="opp-nom">Nom *</label><input type="text" id="opp-nom" name="Nom" required></div>
+            <div class="field"><label for="opp-prenom">Prénom *</label><input type="text" id="opp-prenom" name="Prenom" required></div>
+            <div class="field"><label for="opp-email">E-mail *</label><input type="email" id="opp-email" name="Email" required></div>
+            <div class="field"><label for="opp-tel">Téléphone *</label><input type="tel" id="opp-tel" name="Telephone" required></div>
+            <div class="field full">
+              <label>Langue(s) de travail *</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="Langues" value="Francais"> Français</label>
+                <label><input type="checkbox" name="Langues" value="Anglais"> Anglais</label>
+                <label><input type="checkbox" name="Langues" value="Espagnol"> Espagnol</label>
+                <label><input type="checkbox" name="Langues" value="Portugais"> Portugais</label>
+                <label><input type="checkbox" name="Langues" value="Autres"> Autres</label>
+              </div>
+            </div>
+            <div class="field full"><label for="opp-cv">CV (PDF ou Word) *</label><input type="file" id="opp-cv" name="CV" accept=".pdf,.doc,.docx" required></div>
+            <div class="field full"><label for="opp-message">Message *</label><textarea id="opp-message" name="Message" required></textarea></div>
+            <div class="field full">
+              <label class="consent"><input type="checkbox" required> En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées pour me recontacter.</label>
+            </div>
+          </div>
+          <div style="margin-top:22px;">
+            <button type="submit" class="btn btn-primary">Envoyer ma candidature</button>
+          </div>
+          <p class="form-note"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> Les candidatures sont transmises directement par e-mail à BEITES-I.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">B-I</span>
+          <span class="brand-text"><strong style="color:#fff;">BEITES-I</strong><span style="color:rgba(255,255,255,0.6);">Territoire · Environnement · Santé</span></span>
+        </a>
+        <p>Cabinet d'expertise et d'ingénierie en territoire, environnement et santé, au service du développement durable depuis 2019.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="qui-sommes-nous.html">À propos</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="formation.html">Formation</a></li>
+          <li><a href="opportunite.html">Carrières</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://formation.beites-i.com" target="_blank" rel="noopener">Plateforme E-learning ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> 01 BP 17, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> <a href="mailto:contact@beites-i.com">contact@beites-i.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BEITES-I SARL. Tous droits réservés.</span>
+      <span>Ouagadougou, Burkina Faso</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | BEITES-I</title>
+<meta name="description" content="Contactez BEITES-I, cabinet d'expertise à Ouagadougou, Burkina Faso, pour vos demandes d'informations ou d'opportunités de collaboration.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-links">
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> contact@beites-i.com</span>
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou, Burkina Faso</span>
+      </div>
+    </div>
+  </div>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">B-I</span>
+      <span class="brand-text"><strong>BEITES-I</strong><span>Territoire · Environnement · Santé</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="qui-sommes-nous.html">À propos <svg class="icon"><use href="icons.svg#icon-chevron-down"></use></svg></a>
+          <ul class="dropdown">
+            <li><a href="qui-sommes-nous.html"><svg class="icon"><use href="icons.svg#icon-compass"></use></svg> Notre histoire &amp; mission</a></li>
+            <li><a href="qui-sommes-nous.html#equipe"><svg class="icon"><use href="icons.svg#icon-users"></use></svg> Notre équipe</a></li>
+            <li><a href="opportunite.html"><svg class="icon"><use href="icons.svg#icon-briefcase"></use></svg> Carrières</a></li>
+          </ul>
+        </li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://formation.beites-i.com" target="_blank" rel="noopener" class="nav-elearn">E-learning ↗</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Nous contacter</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+      <svg class="icon icon-menu"><use href="icons.svg#icon-menu"></use></svg>
+      <svg class="icon icon-close"><use href="icons.svg#icon-close"></use></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Contact</div>
+    <h1>Nous contacter</h1>
+    <p>Pour toute demande d'informations complémentaires sur nos activités et les opportunités de collaboration avec BEITES International, nous vous invitons à nous contacter à l'aide du formulaire ci-dessous.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:56px; align-items:flex-start;">
+
+      <div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg></div><div><h4>Adresse</h4><p>01 BP 17, Ouagadougou, Burkina Faso</p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg></div><div><h4>E-mail</h4><p><a href="mailto:contact@beites-i.com">contact@beites-i.com</a></p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-clock"></use></svg></div><div><h4>Horaires</h4><p>Lundi – Vendredi : 8h00 – 17h00</p></div></div>
+        <div class="map-frame">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-1.55%2C12.32%2C-1.47%2C12.40&layer=mapnik&marker=12.3714%2C-1.5197" loading="lazy" title="Ouagadougou, Burkina Faso"></iframe>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-success" id="formSuccessContact"><svg class="icon"><use href="icons.svg#icon-check-circle"></use></svg> Merci pour votre message. Il a bien été envoyé.</div>
+        <div class="form-error" id="formErrorContact">Une erreur s'est produite lors de l'envoi. Merci de réessayer, ou écrivez-nous directement à contact@beites-i.com.</div>
+        <form id="contactForm" novalidate>
+          <input type="hidden" name="_subject" value="Nouveau message — site BEITES-I">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-grid">
+            <div class="field"><label for="c-nom">Nom *</label><input type="text" id="c-nom" name="Nom" required></div>
+            <div class="field"><label for="c-societe">Société *</label><input type="text" id="c-societe" name="Societe" required></div>
+            <div class="field"><label for="c-email">E-mail *</label><input type="email" id="c-email" name="Email" required></div>
+            <div class="field"><label for="c-tel">Téléphone *</label><input type="tel" id="c-tel" name="Telephone" required></div>
+            <div class="field full"><label for="c-sujet">Sujet *</label><input type="text" id="c-sujet" name="Sujet" required></div>
+            <div class="field full"><label for="c-message">Message *</label><textarea id="c-message" name="Message" required></textarea></div>
+            <div class="field full">
+              <label class="consent"><input type="checkbox" required> En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées pour me recontacter. En savoir plus sur la protection de mes données personnelles.</label>
+            </div>
+          </div>
+          <div style="margin-top:22px;">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+          <p class="form-note"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> Votre message est transmis directement par e-mail à BEITES-I.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">B-I</span>
+          <span class="brand-text"><strong style="color:#fff;">BEITES-I</strong><span style="color:rgba(255,255,255,0.6);">Territoire · Environnement · Santé</span></span>
+        </a>
+        <p>Cabinet d'expertise et d'ingénierie en territoire, environnement et santé, au service du développement durable depuis 2019.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="qui-sommes-nous.html">À propos</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="formation.html">Formation</a></li>
+          <li><a href="opportunite.html">Carrières</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://formation.beites-i.com" target="_blank" rel="noopener">Plateforme E-learning ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> 01 BP 17, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> <a href="mailto:contact@beites-i.com">contact@beites-i.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BEITES-I SARL. Tous droits réservés.</span>
+      <span>Ouagadougou, Burkina Faso</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

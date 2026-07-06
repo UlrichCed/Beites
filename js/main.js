@@ -36,7 +36,11 @@ document.querySelectorAll('.has-dropdown > a').forEach((toggle) => {
 // l'événement "error" avant que ce script ne s'exécute (image en tout
 // début de <body>) : on vérifie donc aussi l'état déjà résolu de l'image.
 document.querySelectorAll('img[data-fallback]').forEach((img) => {
-  const hide = () => { img.style.display = 'none'; };
+  const hide = () => {
+    img.style.display = 'none';
+    const fallback = img.nextElementSibling;
+    if (fallback) fallback.classList.add('is-visible');
+  };
   if (img.complete && img.naturalWidth === 0) hide();
   else img.addEventListener('error', hide, { once: true });
 });

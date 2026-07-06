@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,8 +17,9 @@
   <div class="topbar">
     <div class="container">
       <div class="topbar-links">
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></span>
         <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> contact@beites-i.com</span>
-        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou, Burkina Faso</span>
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou (BF) &amp; Conakry (Guinée)</span>
       </div>
     </div>
   </div>
@@ -62,13 +63,35 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head align-left">
+      <span class="eyebrow">Nos bureaux</span>
+      <h2>Présents au Burkina Faso et en Guinée Conakry</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="office-card">
+        <h3><span class="office-flag">🇧🇫</span> Burkina Faso — Siège</h3>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg></div><div><h4>Adresse</h4><p>Gounghin, Ouagadougou, Burkina Faso</p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-phone"></use></svg></div><div><h4>Téléphone</h4><p><a href="tel:+22601029911">+226 01 02 99 11</a> · <a href="tel:+22654003106">54 00 31 06</a><br><a href="tel:+22670729284">+226 70 72 92 84</a></p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-phone"></use></svg></div><div><h4>WhatsApp</h4><p><a class="whatsapp-link" href="https://wa.me/22678001651" target="_blank" rel="noopener">+226 78 00 16 51</a> · <a class="whatsapp-link" href="https://wa.me/22670035185" target="_blank" rel="noopener">70 03 51 85</a></p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg></div><div><h4>E-mail</h4><p><a href="mailto:contact@beites-i.com">contact@beites-i.com</a></p></div></div>
+      </div>
+      <div class="office-card">
+        <h3><span class="office-flag">🇬🇳</span> Guinée Conakry</h3>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg></div><div><h4>Adresse</h4><p>Mafanco Centre, Commune de Matam, Conakry, Guinée</p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-phone"></use></svg></div><div><h4>Téléphone</h4><p><a href="tel:+224626953012">+224 626 95 30 12</a><br><a href="tel:+224620299222">+224 620 29 92 22</a></p></div></div>
+        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg></div><div><h4>E-mail</h4><p><a href="mailto:beitesign2023@gmail.com">beitesign2023@gmail.com</a></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
   <div class="container">
     <div class="grid grid-2" style="gap:56px; align-items:flex-start;">
 
       <div>
-        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg></div><div><h4>Adresse</h4><p>01 BP 17, Ouagadougou, Burkina Faso</p></div></div>
-        <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg></div><div><h4>E-mail</h4><p><a href="mailto:contact@beites-i.com">contact@beites-i.com</a></p></div></div>
         <div class="info-block"><div class="icon-circle sm"><svg class="icon"><use href="icons.svg#icon-clock"></use></svg></div><div><h4>Horaires</h4><p>Lundi – Vendredi : 8h00 – 17h00</p></div></div>
         <div class="map-frame">
           <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-1.55%2C12.32%2C-1.47%2C12.40&layer=mapnik&marker=12.3714%2C-1.5197" loading="lazy" title="Ouagadougou, Burkina Faso"></iframe>
@@ -132,7 +155,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> 01 BP 17, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Gounghin, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></li>
           <li><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> <a href="mailto:contact@beites-i.com">contact@beites-i.com</a></li>
         </ul>
       </div>

@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,8 +17,9 @@
   <div class="topbar">
     <div class="container">
       <div class="topbar-links">
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></span>
         <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> contact@beites-i.com</span>
-        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou, Burkina Faso</span>
+        <span class="topbar-item"><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Ouagadougou (BF) &amp; Conakry (Guinée)</span>
       </div>
     </div>
   </div>
@@ -146,16 +147,42 @@
       <h2>Des consultants expérimentés, aux compétences complémentaires</h2>
     </div>
     <div class="grid grid-4">
-      <div class="card team-card"><div class="avatar">MW</div><h3>Dr. Marcel WANGRAOUA</h3><div class="team-role">Directeur Général</div><p>Expert en santé publique, environnement, gestion de catastrophe et management des services de santé.</p></div>
-      <div class="card team-card"><div class="avatar">SE</div><h3>Mme Savadogo Flore Esther</h3><div class="team-role">Directrice administrative</div><p>Experte en environnement et management du développement durable.</p></div>
-      <div class="card team-card"><div class="avatar">JK</div><h3>M. Jacques KABRE</h3><div class="team-role">Directeur des études et des formations</div><p>Expert en santé publique et aides humanitaires.</p></div>
-      <div class="card team-card"><div class="avatar">FW</div><h3>Dr. François WANGRAOUA</h3><div class="team-role">Expert-consultant</div><p>Expert-consultant en santé publique et en data management.</p></div>
-      <div class="card team-card"><div class="avatar">LS</div><h3>Mme Soma Gbomai Léa</h3><div class="team-role">Directrice prospection &amp; E-learning</div><p>Experte en géomatique et système d'information géographique.</p></div>
-      <div class="card team-card"><div class="avatar">CT</div><h3>M. Cédric Traoré</h3><div class="team-role">Chargé de marketing</div><p>Expert en environnement et en sciences de l'eau.</p></div>
-      <div class="card team-card"><div class="avatar">BK</div><h3>Mlle Balguissa Kindo</h3><div class="team-role">Consultante eau, hygiène et assainissement</div><p>Experte en technologie, eau et assainissement.</p></div>
-      <div class="card team-card"><div class="avatar">LS</div><h3>M. Lassane Simporé</h3><div class="team-role">Expert senior en planification de l'éducation</div><p>Référent en système de gestion des données et statistique.</p></div>
-      <div class="card team-card"><div class="avatar">MN</div><h3>M. Mathieu Nikiema</h3><div class="team-role">Consultant en économie agricole</div><p>Expert en économie agricole.</p></div>
-    </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/marcel-wangraoua.jpg" alt="Dr. Marcel WANGRAOUA" data-fallback><span class="initials">MW</span></div>
+        <div class="team-info"><h3>Dr. Marcel WANGRAOUA</h3><div class="team-role">Directeur Général</div><p>Expert en santé publique, environnement, gestion de catastrophe et management des services de santé.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/flore-esther-savadogo.jpg" alt="Mme Savadogo Flore Esther" data-fallback><span class="initials">SE</span></div>
+        <div class="team-info"><h3>Mme Savadogo Flore Esther</h3><div class="team-role">Directrice administrative</div><p>Experte en environnement et management du développement durable.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/jacques-kabre.jpg" alt="M. Jacques KABRE" data-fallback><span class="initials">JK</span></div>
+        <div class="team-info"><h3>M. Jacques KABRE</h3><div class="team-role">Directeur des études et des formations</div><p>Expert en santé publique et aides humanitaires.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/francois-wangraoua.jpg" alt="Dr. François WANGRAOUA" data-fallback><span class="initials">FW</span></div>
+        <div class="team-info"><h3>Dr. François WANGRAOUA</h3><div class="team-role">Expert-consultant</div><p>Expert-consultant en santé publique et en data management.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/lea-soma-gbomai.jpg" alt="Mme Soma Gbomai Léa" data-fallback><span class="initials">LS</span></div>
+        <div class="team-info"><h3>Mme Soma Gbomai Léa</h3><div class="team-role">Directrice prospection &amp; E-learning</div><p>Experte en géomatique et système d'information géographique.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/cedric-traore.jpg" alt="M. Cédric Traoré" data-fallback><span class="initials">CT</span></div>
+        <div class="team-info"><h3>M. Cédric Traoré</h3><div class="team-role">Chargé de marketing</div><p>Expert en environnement et en sciences de l'eau.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/balguissa-kindo.jpg" alt="Mlle Balguissa Kindo" data-fallback><span class="initials">BK</span></div>
+        <div class="team-info"><h3>Mlle Balguissa Kindo</h3><div class="team-role">Consultante eau, hygiène et assainissement</div><p>Experte en technologie, eau et assainissement.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/lassane-simpore.jpg" alt="M. Lassane Simporé" data-fallback><span class="initials">LS</span></div>
+        <div class="team-info"><h3>M. Lassane Simporé</h3><div class="team-role">Expert senior en planification de l'éducation</div><p>Référent en système de gestion des données et statistique.</p></div>
+      </div>
+      <div class="card team-card">
+        <div class="team-photo"><img src="images/team/mathieu-nikiema.jpg" alt="M. Mathieu Nikiema" data-fallback><span class="initials">MN</span></div>
+        <div class="team-info"><h3>M. Mathieu Nikiema</h3><div class="team-role">Consultant en économie agricole</div><p>Expert en économie agricole.</p></div>
+      </div>
   </div>
 </section>
 
@@ -200,7 +227,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> 01 BP 17, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-pin"></use></svg> Gounghin, Ouagadougou, Burkina Faso</li>
+          <li><svg class="icon"><use href="icons.svg#icon-phone"></use></svg> <a href="tel:+22601029911">+226 01 02 99 11</a></li>
           <li><svg class="icon"><use href="icons.svg#icon-mail"></use></svg> <a href="mailto:contact@beites-i.com">contact@beites-i.com</a></li>
         </ul>
       </div>

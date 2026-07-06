@@ -30,6 +30,17 @@ document.querySelectorAll('.has-dropdown > a').forEach((toggle) => {
   });
 });
 
+// Photos d'équipe et logos partenaires : si le fichier attendu n'a pas
+// encore été fourni, l'image 404 et on affiche le repli (initiales ou
+// nom en texte) déjà présent dans le HTML. Le navigateur peut déclencher
+// l'événement "error" avant que ce script ne s'exécute (image en tout
+// début de <body>) : on vérifie donc aussi l'état déjà résolu de l'image.
+document.querySelectorAll('img[data-fallback]').forEach((img) => {
+  const hide = () => { img.style.display = 'none'; };
+  if (img.complete && img.naturalWidth === 0) hide();
+  else img.addEventListener('error', hide, { once: true });
+});
+
 // Année du footer
 document.querySelectorAll('#year').forEach((el) => {
   el.textContent = new Date().getFullYear();
